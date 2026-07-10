@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  /* Backgrounds - Ink */
+  --color-ink-950: #0B0D12;
+  --color-ink-900: #12151C;
+  --color-ink-800: #191D26;
+  --color-ink-700: #232838;
+  --color-ink-600: #2E3448;
+  --color-ink-500: #454C63;
+
+  /* Text - Mist */
+  --color-mist-50: #EDEFF3;
+  --color-mist-200: #C4C9D4;
+  --color-mist-400: #8992A3;
+
+  /* Brand - Flow */
+  --color-flow: #FFB454;
+  --color-flow-soft: #FFD9A0;
+  --color-flow-dim: #8A5C24;
+
+  /* Secondary - Current */
+  --color-current: #45D8C0;
+  --color-current-soft: #9BEFE0;
+  --color-current-dim: #1F6E60;
+
+  /* Status */
+  --color-done: #34D399;
+
+  /* Priority */
+  --color-priority-low: #6B87FF;
+  --color-priority-med: #FFB454;
+  --color-priority-high: #FB7185;
+}
+
+body{
+  background-color: var(--color-ink-950);
+}
