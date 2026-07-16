@@ -2,37 +2,44 @@
 
 @theme {
   /* Backgrounds - Ink */
-  --color-ink-950: #0B0D12;
-  --color-ink-900: #12151C;
-  --color-ink-800: #191D26;
+  --color-background: #0b0d12;
+  --color-secondary-background: #12151c;
+  --color-ink-800: #191d26;
   --color-ink-700: #232838;
-  --color-ink-600: #2E3448;
-  --color-ink-500: #454C63;
+  --color-ink-600: #2e3448;
+  --color-ink-500: #454c63;
 
-  /* Text - Mist */
-  --color-mist-50: #EDEFF3;
-  --color-mist-200: #C4C9D4;
-  --color-mist-400: #8992A3;
+  /* Text */
+  --color-primary-text: #edeff3;
+  --color-secondary-text: #c4c9d4;
+  --color-mute-text: #8992a3;
 
   /* Brand - Flow */
-  --color-flow: #FFB454;
-  --color-flow-soft: #FFD9A0;
-  --color-flow-dim: #8A5C24;
+  --color-primary-button: #ffb454;
+  --color-hover-button: #ffd9a0;
+  --color-deep-button: #8a5c24;
 
   /* Secondary - Current */
-  --color-current: #45D8C0;
-  --color-current-soft: #9BEFE0;
-  --color-current-dim: #1F6E60;
+  --color-ring: #45d8c0;
+  --color-ring-soft: #9befe0;
+  --color-ring-dim: #1f6e60;
 
   /* Status */
-  --color-done: #34D399;
+  --color-success: #34d399;
 
   /* Priority */
-  --color-priority-low: #6B87FF;
-  --color-priority-med: #FFB454;
-  --color-priority-high: #FB7185;
+  --color-priority-low: #6b87ff;
+  --color-priority-med: #ffb454;
+  --color-priority-high: #fb7185;
 }
 
-body{
-  background-color: var(--color-ink-950);
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  overflow-x: hidden;
 }
